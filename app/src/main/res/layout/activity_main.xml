@@ -35,12 +35,14 @@
             android:text="OK (15%)" />
 
     </RadioGroup>
+
     <Switch
         android:id="@+id/round_up_switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="Round up tip?"
+        android:minHeight="48dp"
+        android:text="@string/round_up_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tip_options" />
@@ -73,11 +75,14 @@
 
     <EditText
         android:id="@+id/cost_of_service"
-        android:layout_height="wrap_content"
         android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Cost of Service"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="Cost of Service"
-        android:inputType="numberDecimal"/>
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
